@@ -1,0 +1,54 @@
+@import 'variables';
+@import 'mixins';
+@import 'mobile';
+
+body {
+  background-color: $bgcolor;
+  color: $color;
+}
+.wrap {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+table {
+  width: 100%;
+  font-family: 'Oxygen Mono', monospace;
+
+  td {
+    border-bottom: 1px solid #ccc;
+  }
+}
+
+#form {
+  span {
+    font-weight: bold;
+    font-size: large;
+  }
+}
+
+th {
+  text-align: left;
+  font-family: sans-serif;
+}
+
+h3 {
+  font-family: sans-serif;
+}
+
+.course {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: auto;
+  float: inherit;
+  align-items: flex-end;
+
+  input {
+    width: 100%;
+  }
+}
+
+.btn {
+  @include btn;
+}

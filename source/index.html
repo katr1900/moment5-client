@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <title>Kurser jag har läst</title>
+</head>
+
+<body>
+    <div class="wrap">
+
+        <h1>Kurser jag har läst</h1>
+        <table id="courses" class="table">
+            <tr>
+                <th>kurskod</th>
+                <th>Kursnamn</th>
+                <th>Progression</th>
+                <th>Kursplan</th>
+            </tr>
+        </table>
+        <form id="form">
+            <h2>Lägg till kurs:</h2>
+            <div class="course">
+                <div>
+                    <label>
+                        <span>Kurskod</span><br>
+                        <input type="text" name="code" id="code"><br>
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <span>Kursnamn</span><br>
+                        <input type="text" name="name" id="name"><br>
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <span>Progression</span><br>
+                        <input type="text" name="progression" id="pro"><br>
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <span>Kursplan</span><br>
+                        <input type="text" name="coursesyllabus" id="kplan"><br>
+                    </label>
+                </div>
+                <div id="button">
+                    <button class="btn">Lägg till Kurs</button>
+                </div>
+            </div>
+            
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

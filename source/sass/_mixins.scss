@@ -1,0 +1,10 @@
+@mixin btn  ($reset: false){
+    border: 1px solid black;
+    padding: 4px 8px;
+    @if $reset{
+        background-color: darken( $button-color, 20% );
+    }
+    @else{
+        background-color: $button-color;
+    }
+}
